@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Finder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Current Time</h1>
+        <form action="/search" method="get">
+            <select name="timezone" required>
+                <option value="" disabled selected>Select a location</option>
+                <% timezones.forEach(function(timezone) { %>
+                    <option value="<%= timezone.value %>"><%= timezone.name %></option>
+                <% }); %>
+            </select>
+            <button type="submit">Get Time</button>
+        </form>
+        <div class="result">
+            <% if (time) { %>
+                <p id="time" class="fade-in">Current date and time: <%= time %></p>
+            <% } %>
+            <% if (error) { %>
+                <p class="error"><%= error %></p>
+            <% } %>
+        </div>
+    </div>
+    <script>
+        // Add some JavaScript to enhance the user experience
+        window.onload = function() {
+            const timeElem = document.getElementById('time');
+            if (timeElem) {
+                timeElem.classList.add('visible');
+            }
+        };
+    </script>
+</body>
+</html>
