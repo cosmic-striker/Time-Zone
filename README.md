@@ -1,6 +1,4 @@
-Here's a GitHub-friendly README file tailored specifically for your Express.js Time Finder project. This README is structured to be clear and informative for users visiting your GitHub repository. You can copy and paste this into a `README.md` file in your project directory.
 
-```markdown
 # 🕒 Time Finder 🌍
 
 Welcome to **Time Finder**, a web application that allows you to effortlessly find the current time in various locations around the world! 
@@ -71,5 +69,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 **Happy Time Finding!** 🕒✨
-```
-
