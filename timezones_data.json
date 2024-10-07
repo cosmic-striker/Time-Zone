@@ -1,0 +1,15 @@
+[
+    {
+        "value": "America/New_York",
+        "name": "New York, USA"
+    },
+    {
+        "value": "Europe/London",
+        "name": "London, UK"
+    },
+    {
+        "value": "Asia/Tokyo",
+        "name": "Tokyo, Japan"
+    }
+
+]
